@@ -44,8 +44,6 @@ input[placeholder]::-webkit-input-placeholder {
 
     .findInput {
         font-size: 5px !important;
-        /* width: 100%; */
-        /* margin: auto; */
         order: 0;
     }
 
@@ -64,8 +62,6 @@ input[placeholder]::-webkit-input-placeholder {
 
     .findBtn {
         padding-inline: 10px !important;
-        /* padding-block: 10px !important; */
-        
         font-size: 12px;
 
     }
