@@ -1,5 +1,5 @@
 const myAPIKey = `fe929c8b878144e880e225611231508`
-const BaseURL = `http://api.weatherapi.com/v1/forecast.json`
+const BaseURL = `https://api.weatherapi.com/v1/forecast.json`
 let searchLocation = document.querySelector("#findLocation")
 
 searchLocation.addEventListener("change", function () {
