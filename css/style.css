@@ -1,0 +1,136 @@
+body {
+    font-family: "Nunito", sans-serif;
+}
+
+
+main {
+    background-image: url(../images/dark-blue.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+
+}
+
+.head-section {
+    display: flex;
+}
+
+.temp-type {
+    font-size: 14px;
+    margin: 0;
+}
+
+.today-weather {
+    border-bottom: 3px dotted gray;
+}
+
+.form-control:focus {
+    box-shadow: unset;
+}
+
+input[placeholder]::-webkit-input-placeholder {
+    color: darkblue;
+}
+
+@media (max-width: 768px) {
+
+    main {
+        height: 100%;
+    }
+
+    .head-section {
+        flex-direction: column;
+    }
+
+    .findInput {
+        font-size: 5px !important;
+        /* width: 100%; */
+        /* margin: auto; */
+        order: 0;
+    }
+
+    .mylocation {
+        order: 1;
+        margin-block: 20px;
+    }
+
+    .mytoday {
+        order: 2;
+    }
+
+    .searchInput {
+        width: 100% !important;
+    }
+
+    .findBtn {
+        padding-inline: 10px !important;
+        /* padding-block: 10px !important; */
+        
+        font-size: 12px;
+
+    }
+
+    .today-weather h1 {
+        font-size: 2rem;
+    }
+
+    .today-weather h2 {
+        font-size: 3rem;
+    }
+
+    .weatherCards {
+        flex-wrap: wrap;
+    }
+
+    .today {
+        flex-basis: 100%;
+    }
+}
+
+
+.lds-ring,
+.lds-ring div {
+    box-sizing: border-box;
+}
+
+.lds-ring {
+    display: inline-block;
+    position: relative;
+    width: 80px;
+    height: 80px;
+}
+
+.lds-ring div {
+    box-sizing: border-box;
+    display: block;
+    position: absolute;
+    width: 64px;
+    height: 64px;
+    margin: 8px;
+    border: 8px solid white;
+    border-radius: 50%;
+    animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+    border-color: white transparent transparent transparent;
+}
+
+.lds-ring div:nth-child(1) {
+    animation-delay: -0.45s;
+}
+
+.lds-ring div:nth-child(2) {
+    animation-delay: -0.3s;
+}
+
+.lds-ring div:nth-child(3) {
+    animation-delay: -0.15s;
+}
+
+@keyframes lds-ring {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
