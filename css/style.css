@@ -7,7 +7,7 @@ main {
     background-image: url(../images/dark-blue.jpg);
     background-position: center;
     background-size: cover;
-    height: 100vh;
+    min-height: 100vh;
 
 }
 
